@@ -1,0 +1,9 @@
+This Webpage is about a gaming store called Maps which sells Games,
+The main page is called index.php which is the sign up
+There are 2 roles for this website: A user which sign up normally and Admin which has a user "maps" and password"maps",
+and if you logged as an admin you can add games to a specific page
+You can add the games you want to buy from any page and press the checkout button.
+We had a Problem in the css to place every 3 images on a row hope you can help, we already added some pics
+Nothing was imported from google even the logo is made by 3d paint not a ready pic.
+Hope you like it doctor.
+
