@@ -6,9 +6,11 @@ if (isset($_POST['submit'])) {
 	}
 	else{
 		$username=$_POST['username'];
-		$password=$_POST['password'];		
+		$user = md5($username);
+		$password=$_POST['password'];
+		$pass = md5($password)		
 		$con= mysqli_connect("localhost", "root","", "mapsstore");
-		$sql="INSERT INTO  user (username,password, role) VALUES ('$username','$password',2)";
+		$sql="INSERT INTO  user (username,password, role) VALUES ('$user','$pass',2)";
         $result=mysqli_query($con,$sql);
         header("location: index2.php");}}
 
