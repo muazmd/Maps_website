@@ -6,9 +6,9 @@ if (isset($_POST['submit'])) {
 		$error = "Username or Password is invalid";
 	}else{
 		$username=$_POST['username'];
-		$user = md5($username);
+		//$user = md5($username);
 		$password=$_POST['password'];
-		$pass = md5($password);		
+		//$pass = md5($password);		
 		$con= mysqli_connect("den1.mysql6.gear.host", "mymapstore","Om78!Bi!M209", "mymapstore");
 		$sql="select * from user where password='".$password."' and username='".$username."'";
 		$result=mysqli_query($con,$sql);
