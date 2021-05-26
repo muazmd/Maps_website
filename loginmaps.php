@@ -10,7 +10,7 @@ if (isset($_POST['submit'])) {
 		$password=$_POST['password'];
 		$pass = md5($password);		
 		$con= mysqli_connect("den1.mysql6.gear.host", "mymapstore","Om78!Bi!M209", "mymapstore");
-		$sql="select * from user where password='".$pass."' and username='".$user."'";
+		$sql="select * from user where password='".$password."' and username='".$username."'";
 		$result=mysqli_query($con,$sql);
 		$rows=mysqli_num_rows($result);//count the rows
 		if ($rows == 1) { //username is matching with the password
