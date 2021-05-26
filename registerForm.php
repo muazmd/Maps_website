@@ -9,7 +9,7 @@ if (isset($_POST['submit'])) {
 		$user = md5($username);
 		$password=$_POST['password'];
 		$pass = md5($password)		
-		$con= mysqli_connect("localhost", "root","", "mapsstore");
+		$con= mysqli_connect("den1.mysql6.gear.host", "mymapstore","Om78!Bi!M209", "mymapstore");
 		$sql="INSERT INTO  user (username,password, role) VALUES ('$user','$pass',2)";
         $result=mysqli_query($con,$sql);
         header("location: index2.php");}}
