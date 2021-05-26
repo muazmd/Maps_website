@@ -4,7 +4,7 @@ if(isset($_POST['upload'])){
     if(!empty($_POST['genere'])){
         foreach ($_POST['genere'] as $selected){
             if($selected == "Survival"){
-                $target = "images/survival/".basename($_FILES['image']['name']);
+                $target = "Maps_website/images/survival/".basename($_FILES['image']['name']);
                 $db = mysqli_connect("den1.mysql6.gear.host","mymapstore","Om78!Bi!M209","mymapstore");
 
 $image= $_FILES['image']['name'];
@@ -23,7 +23,7 @@ else{
 }
             }
             if($selected == "Strategy"){
-                $target = "images/strategy/".basename($_FILES['image']['name']);
+                $target = "Maps_website/images/strategy/".basename($_FILES['image']['name']);
                 $db = mysqli_connect("den1.mysql6.gear.host","mymapstore","Om78!Bi!M209","mymapstore");
 
 $image= $_FILES['image']['name'];
@@ -42,7 +42,7 @@ else{
 }
             }
             if($selected == "open world"){
-                $target = "images/openworld/".basename($_FILES['image']['name']);
+                $target = "Maps_website/images/openworld/".basename($_FILES['image']['name']);
                 $db = mysqli_connect("den1.mysql6.gear.host","mymapstore","Om78!Bi!M209","mymapstore");
 
 $image= $_FILES['image']['name'];
@@ -61,7 +61,7 @@ else{
 }
             }
             if($selected == " Special Deals"){
-                $target = "images/special/".basename($_FILES['image']['name']);
+                $target = "Maps_website/images/special/".basename($_FILES['image']['name']);
                 $db = mysqli_connect("den1.mysql6.gear.host","mymapstore","Om78!Bi!M209","mymapstore");
 
 $image= $_FILES['image']['name'];
@@ -80,7 +80,7 @@ else{
 }
             }
             if($selected == "FPS"){
-                $target = "images/fps/".basename($_FILES['image']['name']);
+                $target = "Maps_website/images/fps/".basename($_FILES['image']['name']);
                 $db = mysqli_connect("den1.mysql6.gear.host","mymapstore","Om78!Bi!M209","mymapstore");
 
 $image= $_FILES['image']['name'];
