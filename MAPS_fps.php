@@ -1,6 +1,6 @@
 <?php   
  session_start();  
- $connect = mysqli_connect("den1.mysql6.gear.host", "mymapstore", "Om78!Bi!M209", "mymapstore");  
+ $connect = mysqli_connect("den1.mysql5.gear.host","mynewmapsdb","Nt6XF!38iz!A","mynewmapsdb");
  if(isset($_POST["add_to_cart"]))  
  {  
       if(isset($_SESSION["shopping_cart"]))  

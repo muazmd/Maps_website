@@ -4,27 +4,27 @@ if(isset($_POST['upload'])){
     if(!empty($_POST['genere'])){
         foreach ($_POST['genere'] as $selected){
             if($selected == "Survival"){
-                $target = "images/survival/".basename($_FILES['image']['name']);
-                $db = mysqli_connect("den1.mysql6.gear.host","mymapstore","Om78!Bi!M209","mymapstore") or die ();
+                $target = "/images/survival/".basename($_FILES['image']['name']);
+                $db = mysqli_connect("den1.mysql5.gear.host","mynewmapsdb","Nt6XF!38iz!A","mynewmapsdb");
 
-$image= $_FILES['image']['name'];
+                $image= $_FILES['image']['name'];
 
-$name = $_POST['name'];
-$price = $_POST['price'];
-$sql= "INSERT INTO games (name, image, price,genre) VALUES ('$name','$image' ,'$price',1)";
-mysqli_query($db,$sql);
+                $name = $_POST['name'];
+                $price = $_POST['price'];
+                $sql= "INSERT INTO games (name, image, price,genre) VALUES ('$name','$image' ,'$price',1)";
+                mysqli_query($db,$sql);
 
-if (move_uploaded_file($_FILES['image']['tmp_name'], $target)){
-    $msg= "This Game has been added succesfully ";
-    echo "$msg";
-}
-else{
-    $msg ="There was a problem uploading the image";
-}
-            }
+                if (move_uploaded_file($_FILES['image']['tmp_name'], $target)){
+                    $msg= "This Game has been added succesfully ";
+                    echo "$msg";
+                }
+                else{
+                    $msg ="There was a problem uploading the image";
+                }
+              }
             if($selected == "Strategy"){
-                $target = "images/strategy/".basename($_FILES['image']['name']);
-                $db = mysqli_connect("den1.mysql6.gear.host","mymapstore","Om78!Bi!M209","mymapstore");
+                $target = "/images/strategy/".basename($_FILES['image']['name']);
+                $db = mysqli_connect("den1.mysql5.gear.host","mynewmapsdb","Nt6XF!38iz!A","mynewmapsdb");
 
 $image= $_FILES['image']['name'];
 
@@ -42,8 +42,8 @@ else{
 }
             }
             if($selected == "open world"){
-                $target = "images/openworld/".basename($_FILES['image']['name']);
-                $db = mysqli_connect("den1.mysql6.gear.host","mymapstore","Om78!Bi!M209","mymapstore");
+                $target = "/images/openworld/".basename($_FILES['image']['name']);
+                $db = mysqli_connect("den1.mysql5.gear.host","mynewmapsdb","Nt6XF!38iz!A","mynewmapsdb");
 
 $image= $_FILES['image']['name'];
 
@@ -60,9 +60,9 @@ else{
     $msg ="There was a problem uploading the image";
 }
             }
-            if($selected == "Special Deals"){
-                $target = "images/special/".basename($_FILES['image']['name']);
-                $db = mysqli_connect("den1.mysql6.gear.host","mymapstore","Om78!Bi!M209","mymapstore");
+            if($selected == " Special Deals"){
+                $target = "/images/special/".basename($_FILES['image']['name']);
+                $db = mysqli_connect("den1.mysql5.gear.host","mynewmapsdb","Nt6XF!38iz!A","mynewmapsdb");
 
 $image= $_FILES['image']['name'];
 
@@ -80,8 +80,8 @@ else{
 }
             }
             if($selected == "FPS"){
-                $target = "images/fps/".basename($_FILES['image']['name']);
-                $db = mysqli_connect("den1.mysql6.gear.host","mymapstore","Om78!Bi!M209","mymapstore");
+                $target = "/images/fps/".basename($_FILES['image']['name']);
+                $db = mysqli_connect("den1.mysql5.gear.host","mynewmapsdb","Nt6XF!38iz!A","mynewmapsdb");
 
 $image= $_FILES['image']['name'];
 
@@ -101,20 +101,9 @@ else{
             
         }
     }
-
-
-
 }
-if (isset($_POST['browse'])) {
-    header("location: Maps.php");}
-
 
 ?>
-
-
-
-
-
 
 <!DOCTYPE html>
 <html>
@@ -130,7 +119,7 @@ if (isset($_POST['browse'])) {
 <body>
     <div class="container">
     <table class="table tble-borderless">
-    <form method="POST" action="index2.php" enctype="multipart/form-data">
+    <form method="POST" action="images.php" enctype="multipart/form-data">
    <tr><td><label for=""> Upload image here </label></td>
    <td>
    <div>
@@ -166,7 +155,7 @@ if (isset($_POST['browse'])) {
     </tr>
      <tr>
      <td><input type="submit" class="btn btn-outline-info" name="upload" value="upload"></td>
-     <td><input type="submit" name="browse" class="btn btn-outline-info" name="" value="continue browsing " id=""></td>
+     <td><input type="submit" class="btn btn-outline-info" name="" value="continue browsing " id=""></td>
      </tr>
     
     </div>
@@ -174,10 +163,7 @@ if (isset($_POST['browse'])) {
 
     </div>
     </form>
-    
-    
-  
-  
+
 
 </td>
     
