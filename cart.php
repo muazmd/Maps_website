@@ -53,7 +53,7 @@
 }
 else
 {
-    echo "Error deleting record"; // display error message if not delete
+    //echo "Error deleting record"; // display error message if not delete
 }
                      unset($_SESSION["shopping_cart"][$keys]);  
                      echo '<script>alert("Item Removed")</script>';  
