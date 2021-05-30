@@ -4,7 +4,7 @@ if(isset($_POST['upload'])){
     if(!empty($_POST['genere'])){
         foreach ($_POST['genere'] as $selected){
             if($selected == "Survival"){
-                $target = "https://github.com/muazmd/Maps_website/tree/master/images/survival/".basename($_FILES['image']['name']);
+                $target = "/images/survival/".basename($_FILES['image']['name']);
                 $db = mysqli_connect("den1.mysql6.gear.host","mymapstore","Om78!Bi!M209","mymapstore");
 
                 $image= $_FILES['image']['name'];
@@ -23,7 +23,7 @@ if(isset($_POST['upload'])){
                 }
               }
             if($selected == "Strategy"){
-                $target = "https://github.com/muazmd/Maps_website/tree/master/images/strategy/".basename($_FILES['image']['name']);
+                $target = "/images/strategy/".basename($_FILES['image']['name']);
                 $db = mysqli_connect("den1.mysql6.gear.host","mymapstore","Om78!Bi!M209","mymapstore");
 
 $image= $_FILES['image']['name'];
@@ -42,7 +42,7 @@ else{
 }
             }
             if($selected == "open world"){
-                $target = "https://github.com/muazmd/Maps_website/tree/master/images/openworld/".basename($_FILES['image']['name']);
+                $target = "/images/openworld/".basename($_FILES['image']['name']);
                 $db = mysqli_connect("den1.mysql6.gear.host","mymapstore","Om78!Bi!M209","mymapstore");
 
 $image= $_FILES['image']['name'];
@@ -61,7 +61,7 @@ else{
 }
             }
             if($selected == " Special Deals"){
-                $target = "https://github.com/muazmd/Maps_website/tree/master/images/special/".basename($_FILES['image']['name']);
+                $target = "/images/special/".basename($_FILES['image']['name']);
                 $db = mysqli_connect("den1.mysql6.gear.host","mymapstore","Om78!Bi!M209","mymapstore");
 
 $image= $_FILES['image']['name'];
@@ -80,7 +80,7 @@ else{
 }
             }
             if($selected == "FPS"){
-                $target = "https://github.com/muazmd/Maps_website/tree/master/images/fps/".basename($_FILES['image']['name']);
+                $target = "/images/fps/".basename($_FILES['image']['name']);
                 $db = mysqli_connect("den1.mysql6.gear.host","mymapstore","Om78!Bi!M209","mymapstore");
 
 $image= $_FILES['image']['name'];
