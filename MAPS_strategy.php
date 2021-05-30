@@ -179,7 +179,7 @@ footer a:hover {
                 <div class="col-sm-4">  
                      <form method="post" action="MAPS_strategy.php?action=add&id=<?php echo $row["id"]; ?>" >  
                           <div style=" background-color:#171A21;  ; padding:16px;" align="center ">  
-                               <img src="images/strategy/<?php echo $row["image"]; ?>" height="200px" width="300px"  class="img-responsive" /><br />  
+                               <img src="/images/strategy/<?php echo $row["image"]; ?>" height="200px" width="300px"  class="img-responsive" /><br />  
                                <h4 class="text-info"><?php echo $row["name"]; ?></h4>  
                                <h4 class="text-danger">$ <?php echo $row["price"]; ?></h4>  
                                <input type="hidden" name="hidden_name" value="<?php echo $row["name"]; ?>" />  
