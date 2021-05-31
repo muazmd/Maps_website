@@ -12,7 +12,7 @@ if (isset($_POST['submit'])) {
 		$con = mysqli_connect("den1.mysql5.gear.host","mynewmapsdb","Nt6XF!38iz!A","mynewmapsdb");
 		$sql="INSERT INTO  user (username,password, role) VALUES ('$user','$pass',2)";
         $result=mysqli_query($con,$sql);
-        header("location: index2.php");}}
+        header("location: index.php");}}
 
 
 ?>
@@ -66,6 +66,12 @@ if (isset($_POST['submit'])) {
 			<label>Password :<i class="fas fa-lock"></i></label></td>
 
 		<td>	<input id="password" name="password" class="form-control" placeholder="**********" type="password">
+	</td></tr>
+	<tr>
+		<td>
+			<label>Role :<i class="fas fa-lock"></i></label></td>
+
+		<td>	<input id="password" name="password" class="form-control" placeholder="Enter 1 for Admin and 2 for user" type="password">
 	</td></tr>
 	<tr><td>	<input name="submit" type="submit" class="btn btn-outline-info" value="Sign UP ">
 	<td><A Href="index2.php">Already have an account?? Login in </A></td>
