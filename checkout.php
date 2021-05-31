@@ -9,6 +9,34 @@ if (isset($_POST["btn"])){
 if (isset($_POST["maps"])){
     header('location: Maps.php');
 }
+if(isset($_GET["action"]))  
+{  
+     if($_GET["action"] == "delete")  
+     {  
+          foreach($_SESSION["shopping_cart"] as $keys => $values)  
+          {  
+               if($values["item_id"] == $_GET["id"])  
+               {  
+                   $id = $_GET['id']; // get id through query string
+
+                   $del = mysqli_query($connect,"delete from tblemp where id = '$id'"); // delete query
+                   if($del)
+{
+   mysqli_close($db); // Close connection
+   header("location:cart.php"); // redirects to all records page
+   exit;	
+}
+else
+{
+   echo "Error deleting record"; // display error message if not delete
+}
+                    unset($_SESSION["shopping_cart"][$keys]);  
+                    echo '<script>alert("Item Removed")</script>';  
+                    
+               }  
+          }  
+     }  
+} 
 ?>
 <html>
     <head>
