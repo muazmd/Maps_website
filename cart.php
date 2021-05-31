@@ -40,7 +40,7 @@
       {  
            foreach($_SESSION["shopping_cart"] as $keys => $values)  
            {  
-                if($values["item_id"] == $_GET["id"])  
+                if($values["item_id"] == $_POST["id"])  
                 {  
                     $id = $_POST['id']; // get id through query string
 
