@@ -115,8 +115,8 @@ if(isset($_POST['browsing'])){
 <link rel="icon" href="Maps.ico" >
 <style >
 body{
-         background: #171a21;
-        }
+         background-color: #171a21;
+    }
 #header{
      height: 85px;
      background-color:  #1c3969;
