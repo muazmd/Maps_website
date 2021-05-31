@@ -52,7 +52,7 @@ if(isset($_GET["action"]))
      height: 85px;
      background-color:  #1c3969;
 	 margin-bottom: 10px;
-      margin-top:30px;
+     
    }
   #header img{
     width: 150px;
