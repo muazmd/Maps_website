@@ -9,8 +9,9 @@ if (isset($_POST['submit'])) {
 		$user = md5($username);
 		$password=$_POST['password'];
 		$pass = md5($password);		
+		$role = $_POST['role'];
 		$con = mysqli_connect("den1.mysql5.gear.host","mynewmapsdb","Nt6XF!38iz!A","mynewmapsdb");
-		$sql="INSERT INTO  user (username,password, role) VALUES ('$user','$pass',2)";
+		$sql="INSERT INTO  user (username,password, role) VALUES ('$user','$pass','$role')";
         $result=mysqli_query($con,$sql);
         header("location: index.php");}}
 
@@ -71,10 +72,10 @@ if (isset($_POST['submit'])) {
 		<td>
 			<label>Role :<i class="fas fa-lock"></i></label></td>
 
-		<td>	<input id="password" name="password" class="form-control" placeholder="Enter 1 for Admin and 2 for user" type="password">
+		<td>	<input id="role" name="role" class="form-control" placeholder="Enter 1 for Admin and 2 for user" type="password">
 	</td></tr>
 	<tr><td>	<input name="submit" type="submit" class="btn btn-outline-info" value="Sign UP ">
-	<td><A Href="index2.php">Already have an account?? Login in </A></td>
+	<td><A Href="index.php">Already have an account?? Login in </A></td>
 	</td></tr>
 			</table>
 		</form>
