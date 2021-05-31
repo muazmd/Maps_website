@@ -70,7 +70,7 @@ if (isset($_POST['submit'])) {
 	</td></tr>
 	<tr>
 		<td>
-			<label>Role :<i class="fas fa-lock"></i></label></td>
+			<label>Role :</label></td>
 
 		<td>	<input id="role" name="role" class="form-control" placeholder="Enter 1 for Admin and 2 for user" type="password">
 	</td></tr>
