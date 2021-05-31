@@ -3,7 +3,7 @@
 session_start();
 
 if (isset($_POST["btn"])){
-         echo '<script>alert("your order has been confirmed")</script>';  
+        // echo '<script>alert("your order has been confirmed")</script>';  
           echo '<script>window.location="checkout.php"</script>';
 }
 if (isset($_POST["maps"])){
@@ -124,7 +124,7 @@ if(isset($_GET["action"]))
 <form action="checkout.php" method='POST'>
 <button href="Maps.php" name="maps" class="btn btn-outline-success"> Continue Shopping</button>
 
-<button class="btn btn-outline-success" name="btn"  > Order</button>
+<button class="btn btn-outline-success" name="btn" onclick="sendEmail()" > Order</button>
 </form>
     
 
@@ -134,6 +134,19 @@ if(isset($_GET["action"]))
         function order(){
             alert('your order is confirmed ');
         }
+        function sendEmail() {
+	     Email.send({
+	     Host: "smtp.gmail.com",
+	     Username : "<Maps@gmail.com>",
+	     Password : "<MAPSmm>",
+	     To : '<<?php $_SESSION['username']; ?>@gmail.com>',
+	     From : "<Maps@gmail.com>",
+	     Subject : "<Orderd successfully>",
+	     Body : "<Thank you for Orderding from MAPS. You order has been confirmed  >",
+	     }).then(
+	     	message => alert("your order is confirmed")
+	     );
+}
                           
         
     </script>
