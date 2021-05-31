@@ -34,15 +34,15 @@
            $_SESSION["shopping_cart"][0] = $item_array;  
       }  
  }  
- if(isset($_GET["action"]))  
+ if(isset($_POST["action"]))  
  {  
-      if($_GET["action"] == "delete")  
+      if($_POST["action"] == "delete")  
       {  
            foreach($_SESSION["shopping_cart"] as $keys => $values)  
            {  
                 if($values["item_id"] == $_GET["id"])  
                 {  
-                    $id = $_GET['id']; // get id through query string
+                    $id = $_POST['id']; // get id through query string
 
                     $del = mysqli_query($connect,"delete from tblemp where id = '$id'"); // delete query
                     if($del)
