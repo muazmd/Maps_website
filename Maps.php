@@ -93,7 +93,7 @@ footer a{
 }
 footer a:hover {
   color: #b05f02;}
-  #img1{
+  img{
     width: 300px;
     height: 250px;
   }
@@ -106,10 +106,7 @@ footer a:hover {
     color: lightgray;
     font: Arial, sans-serif;
   }
-  #img2{
-    width: 400px;
-    height: 250px;
-  }
+ 
   #center a{
     text-decoration: none;
     color: rgb(25, 165, 207);
