@@ -125,7 +125,7 @@ if(isset($_GET["action"]))
 <form action="checkout.php" method='POST'>
 <button href="Maps.php" name="maps" class="btn btn-outline-success"> Continue Shopping</button>
 
-<button class="btn btn-outline-success" name="btn" onclick="sendEmail" > Order</button>
+<button class="btn btn-outline-success" name="btn" onclick=sendEmail() > Order</button>
 </form>
     
 
