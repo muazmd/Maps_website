@@ -211,15 +211,15 @@ footer a:hover {
 
 
          <footer>
-        <div>
+         <div>
         
-          <ul>
-          <li><a href="Maps.php">Maps.com</a></li>
-          <li>Lebanon</li>
-          <li>70/846427</li>
-          <li>Contact Us At:  31831043@students.liu.edu.lb
-          </li></ul>
-          </div>
+        <ul>
+        <li><a href="Maps.php">Maps.com</a></li>
+        <li>Lebanon</li>
+        <li>78/821499</li>
+        <li>Contact Us At:  Maps@gmail.com
+        </li></ul>
+        </div>
       
       </footer> 
 
