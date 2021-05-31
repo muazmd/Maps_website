@@ -5,7 +5,7 @@ session_start();
 if (isset($_POST["btn"])){
         echo '<script>alert("your order has been confirmed")</script>';  
         
-          echo '<script>window.location="checkout.php"</script>';
+          echo '<script>window.location="Maps.php"</script>';
 }
 if (isset($_POST["maps"])){
     header('location: Maps.php');
