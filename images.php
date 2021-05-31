@@ -158,7 +158,7 @@ if(isset($_POST['browsing'])){
     </tr>
      <tr>
      <td><input type="submit" class="btn btn-outline-info" name="upload" value="upload"></td>
-     <td><input type="submit" class="btn btn-outline-info" name="" value="browsing " id=""></td>
+     <td><input type="submit" class="btn btn-outline-info" name="browsing" value="continue browsing " id=""></td>
      </tr>
     
     </div>
