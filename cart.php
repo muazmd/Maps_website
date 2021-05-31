@@ -34,15 +34,15 @@
            $_SESSION["shopping_cart"][0] = $item_array;  
       }  
  }  
- if(isset($_POST["action"]))  
+ if(isset($_GET["action"]))  
  {  
-      if($_POST["action"] == "delete")  
+      if($_GET["action"] == "delete")  
       {  
            foreach($_SESSION["shopping_cart"] as $keys => $values)  
            {  
-                if($values["item_id"] == $_POST["id"])  
+                if($values["item_id"] == $_GET["id"])  
                 {  
-                    $id = $_POST['id']; // get id through query string
+                    $id = $_GET['id']; // get id through query string
 
                     $del = mysqli_query($connect,"delete from tblemp where id = '$id'"); // delete query
                     if($del)
@@ -53,7 +53,7 @@
 }
 else
 {
-    //echo "Error deleting record"; // display error message if not delete
+    echo "Error deleting record"; // display error message if not delete
 }
                      unset($_SESSION["shopping_cart"][$keys]);  
                      echo '<script>alert("Item Removed")</script>';  
@@ -61,7 +61,7 @@ else
                 }  
            }  
       }  
- } 
+ }
  ?>  
  <!DOCTYPE html>  
  <html>  
