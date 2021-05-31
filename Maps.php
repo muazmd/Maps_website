@@ -158,13 +158,13 @@ footer a:hover {
 </div>
 
 <div id="center">
-<img src="cold.jpg" id="COD Cold War">
-<img src="img3.jpg" id="img2">
-<h2>Expereince Call of duty Black ops 4 and DaysGone now for Free:</h2> <br>
-<h4>Play call of duty Black ops 4 and DaysGone now for free, download it now and keep it forever.</h4>
-<h4>The offer expires on june 18</h4> <br><br>
-<h2>Click Here to Download call of duty COld War<a href="Special Deals.php"> Download</a></h2>
-<h2>Click Here to Download DaysGone <a href="Special Deals.php">  Download</a></h2>
+<img src="ACV.jpg" id="AC Valhalla">
+<img src="WatchDogs.jpg" id="Watch Dogs Legion">
+<h2>Expereince Assassin's Creed Valhalla and Watch Dogs Legion now for Free:</h2> <br>
+<h4>Play Assassin's Creed Valhalla and Watch Dogs Legion now for free, download it now and keep it forever.</h4>
+<h4>The offer expires on june 10</h4> <br><br>
+<h2>Click Here to Download Assassin's Creed Valhalla<a href="Special Deals.php"> Download</a></h2>
+<h2>Click Here to Download Watch Dogs Legion <a href="Special Deals.php">  Download</a></h2>
 
 </div>
 
