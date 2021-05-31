@@ -4,6 +4,17 @@ session_start();
 
 if (isset($_POST["btn"])){
         // echo '<script>alert("your order has been confirmed")</script>';  
+        echo '<script> Email.send({
+	     Host: "smtp.gmail.com",
+	     Username : "<Maps@gmail.com>",
+	     Password : "<MAPSmm>",
+	     To : '<<?php $_SESSION['username']; ?>@gmail.com>',
+	     From : "<Maps@gmail.com>",
+	     Subject : "<Orderd successfully>",
+	     Body : "<Thank you for Orderding from MAPS. You order has been confirmed  >",
+	     }).then(
+	     	message => alert("your order is confirmed")
+	     );</script>';  
           echo '<script>window.location="checkout.php"</script>';
 }
 if (isset($_POST["maps"])){
