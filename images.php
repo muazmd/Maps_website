@@ -102,7 +102,7 @@ else{
         }
     }
 }
-if(isset($_POST['upload'])){
+if(isset($_POST['browsing'])){
     header("location: Maps.php");
 }
 
