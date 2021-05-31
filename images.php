@@ -112,6 +112,7 @@ if(isset($_POST['browsing'])){
 <html>
 
 <head>
+<link rel="icon" href="Maps.ico" >
 <style >
 body{
             background: #171a21;;

@@ -5,6 +5,7 @@ session_start();
 <html>
 <head>
   <title>Maps</title>
+  <link rel="icon" href="Maps.ico" >
   <style>
   *{
     padding: 0;
