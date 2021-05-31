@@ -7,7 +7,7 @@ if (isset($_POST["btn"])){
         
           echo '<script>window.location="checkout.php"</script>';
           $del = mysqli_query($connect,"delete * from tblemp ");
-          header('location: Maps.php');
+          //header('location: Maps.php');
 }
 if (isset($_POST["maps"])){
     header('location: Maps.php');
