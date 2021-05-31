@@ -112,6 +112,20 @@ if(isset($_POST['browsing'])){
 <html>
 
 <head>
+<style >
+body{
+            background: #171a21;;
+        }
+#header{
+     height: 85px;
+     background-color:  #1c3969;
+   }
+  #header img{
+    width: 150px;
+    position: absolute;
+    left: 14px;
+    top: 10px;
+  }</style>
 <title>Image Upload | Maps"</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -120,6 +134,10 @@ if(isset($_POST['browsing'])){
   <script src="https://kit.fontawesome.com/f5f92436ce.js" crossorigin="anonymous"> </script>
 </head>
 <body>
+<div id="header">
+        <img id="logo" src="maps.jpg" >
+  
+     </div>
     <div class="container">
     <table class="table tble-borderless">
     <form method="POST" action="images.php" enctype="multipart/form-data">
