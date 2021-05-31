@@ -22,45 +22,45 @@ if(isset($_POST['upload'])){
                     $msg ="There was a problem uploading the image";
                 }
               }
-            if($selected == "Strategy"){
+        if($selected == "Strategy"){
                 $target = "/images/strategy/".basename($_FILES['image']['name']);
                 $db = mysqli_connect("den1.mysql5.gear.host","mynewmapsdb","Nt6XF!38iz!A","mynewmapsdb");
 
-$image= $_FILES['image']['name'];
+                $image= $_FILES['image']['name'];
 
-$name = $_POST['name'];
-$price = $_POST['price'];
-$sql= "INSERT INTO games (name, image, price,genre) VALUES ('$name','$image' ,'$price',2)";
-mysqli_query($db,$sql);
+                $name = $_POST['name'];
+                $price = $_POST['price'];
+                $sql= "INSERT INTO games (name, image, price,genre) VALUES ('$name','$image' ,'$price',2)";
+                mysqli_query($db,$sql);
 
-if (move_uploaded_file($_FILES['image']['tmp_name'], $target)){
-    $msg= "This Game has been added succesfully ";
-    echo "$msg";
-}
-else{
-    $msg ="There was a problem uploading the image";
-}
-            }
-            if($selected == "open world"){
+                if (move_uploaded_file($_FILES['image']['tmp_name'], $target)){
+                    $msg= "This Game has been added succesfully ";
+                    echo "$msg";
+                }
+                else{
+                    $msg ="There was a problem uploading the image";
+                }
+                            }
+        if($selected == "open world"){
                 $target = "/images/openworld/".basename($_FILES['image']['name']);
                 $db = mysqli_connect("den1.mysql5.gear.host","mynewmapsdb","Nt6XF!38iz!A","mynewmapsdb");
 
-$image= $_FILES['image']['name'];
+                $image= $_FILES['image']['name'];
 
-$name = $_POST['name'];
-$price = $_POST['price'];
-$sql= "INSERT INTO games (name, image, price, genre) VALUES ('$name','$image' ,'$price',3)";
-mysqli_query($db,$sql);
+                $name = $_POST['name'];
+                $price = $_POST['price'];
+                $sql= "INSERT INTO games (name, image, price, genre) VALUES ('$name','$image' ,'$price',3)";
+                mysqli_query($db,$sql);
 
-if (move_uploaded_file($_FILES['image']['tmp_name'], $target)){
-    $msg= "This Game has been added succesfully ";
-    echo "$msg";
-}
-else{
-    $msg ="There was a problem uploading the image";
-}
-            }
-            if($selected == " Special Deals"){
+                if (move_uploaded_file($_FILES['image']['tmp_name'], $target)){
+                    $msg= "This Game has been added succesfully ";
+                    echo "$msg";
+                }
+                else{
+                    $msg ="There was a problem uploading the image";
+                }
+                            }
+            if($selected == "Special Deals"){
                 $target = "/images/special/".basename($_FILES['image']['name']);
                 $db = mysqli_connect("den1.mysql5.gear.host","mynewmapsdb","Nt6XF!38iz!A","mynewmapsdb");
 
