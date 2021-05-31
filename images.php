@@ -102,6 +102,9 @@ else{
         }
     }
 }
+if(isset($_POST['upload'])){
+    header("location: Maps.php");
+}
 
 ?>
 
@@ -155,7 +158,7 @@ else{
     </tr>
      <tr>
      <td><input type="submit" class="btn btn-outline-info" name="upload" value="upload"></td>
-     <td><input type="submit" class="btn btn-outline-info" name="" value="continue browsing " id=""></td>
+     <td><input type="submit" class="btn btn-outline-info" name="" value="browsing " id=""></td>
      </tr>
     
     </div>
