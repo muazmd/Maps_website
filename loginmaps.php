@@ -18,7 +18,7 @@ if (isset($_POST['submit'])) {
 			$res = mysqli_fetch_array($result);			
 			if ($res['role'] ==1){		
 				$_SESSION['role']= "admin";
-				header("location: index2.php"); 
+				header("location: images.php"); 
 			}else if ($res['role'] ==2){
 				$_SESSION['role']= "user";
 				header("location: Maps.php"); 
