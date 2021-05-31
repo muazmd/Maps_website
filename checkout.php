@@ -26,10 +26,10 @@ if(isset($_GET["action"]))
    header("location:cart.php"); // redirects to all records page
    exit;	
 }
-else
-{
-   echo "Error deleting record"; // display error message if not delete
-}
+//else
+//{
+ //  echo "Error deleting record"; // display error message if not delete
+//}
                     unset($_SESSION["shopping_cart"][$keys]);  
                     echo '<script>alert("Item Removed")</script>';  
                     
