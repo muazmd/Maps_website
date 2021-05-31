@@ -6,6 +6,7 @@ if (isset($_POST["btn"])){
         echo '<script>alert("your order has been confirmed")</script>';  
         
           echo '<script>window.location="checkout.php"</script>';
+          $del = mysqli_query($connect,"delete * from tblemp ");
           header('location: Maps.php');
 }
 if (isset($_POST["maps"])){
